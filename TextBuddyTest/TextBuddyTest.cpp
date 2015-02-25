@@ -18,7 +18,8 @@ namespace TextBuddyTest
 			Assert::AreEqual(0, test.getNumOfLines());
 
 			test.addToFile("hello");
-			Assert::AreEqual(1, test.getNumOfLines());
+			string expected = "\n1. hello\n";
+			Assert::AreEqual(expected, test.display());
 		}
 		TEST_METHOD(DisplayTest)
 		{
