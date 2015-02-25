@@ -1,0 +1,18 @@
+﻿Build started 23-Feb-15 11:05:13 PM.
+     1>Project "C:\Users\User\Documents\Sem 4\CS2103\Visual Studio 2013\Projects\TextBuddy++\TextBuddyTest\TextBuddyTest.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\UnitTest\include" /I"C:\Users\User\Documents\Sem 4\CS2103\Visual Studio 2013\Projects\TextBuddy++\Debug" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\TextBuddyTest.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /FC /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\UnitTest\include" /I"C:\Users\User\Documents\Sem 4\CS2103\Visual Studio 2013\Projects\TextBuddy++\Debug" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Debug\TextBuddyTest.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /FC /errorReport:prompt TextBuddyTest.cpp
+         TextBuddyTest.cpp
+     1>c:\users\user\documents\sem 4\cs2103\visual studio 2013\projects\textbuddy++\textbuddytest\textbuddy.cpp(112): warning C4715: 'TextBuddy::display' : not all control paths return a value
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\User\Documents\Sem 4\CS2103\Visual Studio 2013\Projects\TextBuddy++\Debug\Debug\TextBuddyTest.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\UnitTest\lib" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\User\Documents\Sem 4\CS2103\Visual Studio 2013\Projects\TextBuddy++\Debug\Debug\TextBuddyTest.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\User\Documents\Sem 4\CS2103\Visual Studio 2013\Projects\TextBuddy++\Debug\Debug\TextBuddyTest.lib" /MACHINE:X86 /DLL Debug\stdafx.obj
+         Debug\TextBuddyTest.obj
+            Creating library C:\Users\User\Documents\Sem 4\CS2103\Visual Studio 2013\Projects\TextBuddy++\Debug\Debug\TextBuddyTest.lib and object C:\Users\User\Documents\Sem 4\CS2103\Visual Studio 2013\Projects\TextBuddy++\Debug\Debug\TextBuddyTest.exp
+         TextBuddyTest.vcxproj -> C:\Users\User\Documents\Sem 4\CS2103\Visual Studio 2013\Projects\TextBuddy++\Debug\Debug\TextBuddyTest.dll
+     1>Done Building Project "C:\Users\User\Documents\Sem 4\CS2103\Visual Studio 2013\Projects\TextBuddy++\TextBuddyTest\TextBuddyTest.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.35
