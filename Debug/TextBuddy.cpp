@@ -20,6 +20,8 @@ void TextBuddy::sort() {
 	
 	saveFile(nameOfFile);
 	
+	cout << "\ninputs successfully sorted alphabetically\n";
+
 	return;
 }
 
@@ -27,16 +29,15 @@ void TextBuddy::sort() {
 //searches the vector stored privately 
 //returns the lines which the words are found in the same format as the display function
 string TextBuddy::search(string word) {
-	
 	ostringstream oss;
 
 	for (int i = 0; i < getNumOfLines(); i++) {
 		if (userInputs[i].find(word) < userInputs[i].size()) {//found word in string
-			oss << endl << i+1 << ". " << userInputs[i] << endl;
+			oss << endl << i + 1 << ". " << userInputs[i] << endl;
 		}
 	}
 	string out = oss.str();
-	
+
 	saveFile(nameOfFile);
 	
 	return out;
@@ -89,13 +90,13 @@ void TextBuddy::addToFile(string userInput) {
 //This method prints out everything that is stored, numbered from 1
 string TextBuddy::display() {
 
+	ostringstream oss;
+
 	if (userInputs.empty()) {
-		cout << endl << nameOfFile << " is empty\n";
+		oss << endl << nameOfFile << " is empty\n";
 	}
 	else {
 		vector<string>::iterator iter = userInputs.begin();
-		
-		ostringstream oss;
 
 		int i = 0;
 		while (iter != userInputs.end()){
@@ -103,11 +104,11 @@ string TextBuddy::display() {
 			oss << endl << i << ". " << *iter << endl;
 			iter++;
 		}
-
-		string lines = oss.str();
-		cout << lines;
-		return lines;
 	}
+	string lines = oss.str();
+	cout << lines;
+	return lines;
+	
 	
 }
 
@@ -140,7 +141,7 @@ void TextBuddy::executeCommand(string command) {
 	}
 	else if (command == "add") {
 		string input;
-		getline(cin, input);
+		getline (cin, input);
 		addToFile(input);
 	}
 	else if (command == "display") {
@@ -159,7 +160,7 @@ void TextBuddy::executeCommand(string command) {
 	}
 	else if (command == "search") {
 		string word;
-		getline(cin, word);
+		cin >> word;
 		cout << search(word);
 	}
 
