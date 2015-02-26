@@ -159,7 +159,7 @@ void TextBuddy::executeCommand(string command) {
 	}
 	else if (command == "search") {
 		string word;
-		cin >> word;
+		getline(cin, word);
 		cout << search(word);
 	}
 

@@ -1,4 +1,4 @@
-﻿Build started 26-Feb-15 12:32:25 AM.
+﻿Build started 26-Feb-15 11:45:15 PM.
      1>Project "C:\Users\User\Documents\Sem 4\CS2103\Visual Studio 2013\Projects\TextBuddy++\TextBuddyTest\TextBuddyTest.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\UnitTest\include" /I"C:\Users\User\Documents\Sem 4\CS2103\Visual Studio 2013\Projects\TextBuddy++\Debug" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\TextBuddyTest.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /FC /errorReport:prompt stdafx.cpp
@@ -15,4 +15,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.39
+Time Elapsed 00:00:01.42
