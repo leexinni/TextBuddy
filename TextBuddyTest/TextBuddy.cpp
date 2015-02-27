@@ -29,6 +29,7 @@ void TextBuddy::sort() {
 //searches the vector stored privately 
 //returns the lines which the words are found in the same format as the display function
 string TextBuddy::search(string word) {
+	
 	ostringstream oss;
 
 	for (int i = 0; i < getNumOfLines(); i++) {
@@ -64,8 +65,9 @@ void TextBuddy::deleteAnInput(int number) {
 		iter++;
 		number--;
 	}
-	cout << "\ndeleted from " << nameOfFile << ": \"" << *iter << "\"\n";
 	userInputs.erase(iter);
+
+	cout << "\ndeleted from " << nameOfFile << ": \"" << *iter << "\"\n";
 
 	saveFile(nameOfFile);
 
@@ -76,7 +78,7 @@ void TextBuddy::deleteAnInput(int number) {
 //assumes that user input is only 1 line
 void TextBuddy::addToFile(string userInput) {
 
-	userInput = userInput.substr(userInput.find_first_not_of(" "));
+	//userInput = removeWhiteSpace(userInput);
 
 	userInputs.push_back(userInput);
 
@@ -133,6 +135,32 @@ void TextBuddy::saveFile(string name) {
 	return;
 }
 
+//This method takes in a string, removes leading white spaces until
+//first word is found
+//returns the string starting from the first word
+string TextBuddy::removeWhiteSpace(string userInput) {
+	string newuserInput = userInput.substr(userInput.find_first_not_of(" "));
+	return newuserInput;
+}
+
+//This method processes user command descriptions and modifies it to a 
+//string ready to be used by the program
+string TextBuddy::getCommandDesc() {
+	string input;
+	getline(cin, input);
+	input = removeWhiteSpace(input);
+
+	return input;
+}
+
+//This method processes the number the user inputs
+//returns the number ready to be used by the program
+int TextBuddy::getNum() {
+	int num;
+	cin >> num;
+	return num;
+}
+
 //This method takes in the command line from the user and processes it
 //according to what functions the user wants to accomplish
 void TextBuddy::executeCommand(string command) {
@@ -140,16 +168,15 @@ void TextBuddy::executeCommand(string command) {
 		return;
 	}
 	else if (command == "add") {
-		string input;
-		getline (cin, input);
+		string input = getCommandDesc();	
 		addToFile(input);
 	}
 	else if (command == "display") {
 		display();
 	}
 	else if (command == "delete") {
-		int number;
-		cin >> number; 
+		int number = getNum();
+		//cin >> number; 
 		deleteAnInput(number);
 	}
 	else if (command == "clear") {
@@ -159,8 +186,8 @@ void TextBuddy::executeCommand(string command) {
 		sort();
 	}
 	else if (command == "search") {
-		string word;
-		cin >> word;
+		string word = getCommandDesc();
+		//cin >> word;
 		cout << search(word);
 	}
 

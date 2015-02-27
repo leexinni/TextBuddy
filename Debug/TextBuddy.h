@@ -23,6 +23,12 @@ public:
 
 	int getNumOfLines();
 
+	string removeWhiteSpace(string);
+
+	string getCommandDesc();
+
+	int getNum();
+
 	void addToFile(string);
 
 	string display();

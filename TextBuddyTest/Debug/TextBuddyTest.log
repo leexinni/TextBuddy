@@ -1,5 +1,6 @@
-﻿Build started 27-Feb-15 1:00:02 AM.
+﻿Build started 27-Feb-15 9:43:34 AM.
      1>Project "C:\Users\User\Documents\Sem 4\CS2103\Visual Studio 2013\Projects\TextBuddy++\TextBuddyTest\TextBuddyTest.vcxproj" on node 2 (Rebuild target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppClean.targets(76,5): warning : The process cannot access the file 'c:\users\user\documents\sem 4\cs2103\visual studio 2013\projects\textbuddy++\textbuddytest\debug\textbuddytest.obj' because it is being used by another process.
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\UnitTest\include" /I"C:\Users\User\Documents\Sem 4\CS2103\Visual Studio 2013\Projects\TextBuddy++\Debug" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Debug\TextBuddyTest.pch" /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /FC /errorReport:prompt stdafx.cpp
          stdafx.cpp
@@ -14,4 +15,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.51
+Time Elapsed 00:00:01.48
